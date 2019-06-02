@@ -61,7 +61,7 @@
 
    - **System.arraycopy()를 이용한 복사**
      
-     ```
+     ```java
    System.arraycopy(기존배열, 기준인덱스, 복사배열, 기준인덱스, 복사할 인덱스 수)
      ```
      

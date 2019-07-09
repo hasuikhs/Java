@@ -65,6 +65,4 @@
        | peekFirst() | peek()  |   -    |
        | peekLast()  |    -    | peek() |
 
-       
-
-4. #### 
+      

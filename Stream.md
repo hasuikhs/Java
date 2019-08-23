@@ -291,16 +291,16 @@
    		// 나이가 50살 이상인 사람들의 연봉을 구해서
    		// List<Integer> 형태의 ArrayList에 저장해 보자
    		List<Integer> tmpList = employees.stream()
-   										 .filter(t -> (t.getAge() >= 50))
-   										 .map(t -> t.getSalery())
-   										 .collect(Collectors.toList());
+   					.filter(t -> (t.getAge() >= 50))
+   					.map(t -> t.getSalery())
+   					.collect(Collectors.toList());
    		System.out.println(tmpList);
    
    		// 당연히 Set, Map 으로 저장 가능
    		Set<Integer> tmpSet = employees.stream()
-   				 				.filter(t -> (t.getAge() >= 50))
-   				 				.map(t -> t.getSalery())
-   				 				.collect(Collectors.toCollection(HashSet :: new));
+   				.filter(t -> (t.getAge() >= 50))
+   				.map(t -> t.getSalery())
+   				.collect(Collectors.toCollection(HashSet :: new));
    		System.out.println(tmpSet);
    	}
    }

@@ -26,6 +26,9 @@
    ```java
    // 현재 사용되는 Thread의 이름을 출력해보자
    // javaFX 사용
+   // javaFX https://gluonhq.com/products/javafx/ 의 JavaFX Windows SDK 다운
+   // 이클립스의 진행할 프로젝트의 패키지를 우클릭후 properties에 들어가 java build path - libraries - add external JARs
+   // 해당파일 압축해제 후 lib 폴더에 들어있는 jar 파일들을 연결
    public class Exam01_ThreadBasic extends Application{
    	
    	TextArea textarea;

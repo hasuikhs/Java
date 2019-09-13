@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+       
+        // 격자판 가로 세로
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        
+        int[][] pan = new int[x+1][y+1];
+        
+        int numOfStick = sc.nextInt();
+        
+        for(int n = 0; n < numOfStick; n++) {
+        	int l = sc.nextInt();
+        	int d = sc.nextInt();
+        	int xOfStick = sc.nextInt();
+        	int yOfStick = sc.nextInt();
+        	
+        	// 방향
+        	if(d == 1  || d == 2) {		// 세로
+        		// 막대의 길이
+        		for(int i = 1; i <= x; i++) {
+        			for(int j = 1; j <= y; j++) {
+        				if (i == xOfStick && j == yOfStick) {
+        					for(int k = i; k < i + l; k++) {
+        						pan[k][j] = 1;
+        					}
+        				}
+        			}
+        			
+        		}
+        	}else if (d == 0){	// 가로
+        		for(int i = 1; i <= x; i++) {
+        			for(int j = 1; j <= y; j++) {
+        				if (i == xOfStick && j == yOfStick) {
+        					for(int k = j; k < j + l; k++) {
+        						pan[i][k] = 1;
+        					}
+        				}
+        			}
+        		}
+        	}
+        }
+        
+        for (int i = 1; i <= x; i++) {
+        	for (int j = 1; j <= y; j++) {
+        		System.out.print(pan[i][j] + " ");
+        	}
+        	System.out.println();
+        }
+    }
+}

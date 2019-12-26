@@ -105,7 +105,7 @@
       
       @AnnotationName
       public void methodName(){}
-}
+  }
   ```
   
 

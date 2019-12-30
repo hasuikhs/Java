@@ -2,7 +2,12 @@
 
 1. #### Iterator
 
-   - 모두 컬렉션에 저장된 요소를 접근하는데 사용되는 인터페이스
+   - **컬렉션에 저장된 요소를 접근하는데 사용**되는 인터페이스
+   - 사실 Iterator를 사용하면 복잡해지고 시간이 더 소요가 된다.
+   - 그렇다면 Iterator를 사용하는 이유는 무엇일까?
+     - 이유는 **다형성**에 있다.
+     - iterator를 활용하면 어떤 컬렉션이라도 동일한 방식으로 항목에 접근 가능하다.
+     - 즉, 컬렉션 **구현 방법을 노출시키지 않으면서도 집합체 안에 들어있는 모든 항목에 접근 가능**하게 해준다.
 
    ##### Iterator
 
@@ -22,8 +27,14 @@
            list.add("4");
            list.add("5");
            
-           Iterator it = list.iterator();
+           // for문 사용시
+           int listSize = list.size();
+           for(int i = 0; i < listSize; i++){
+               System.out.println(list.get(i));
+           }        
            
+           // Itorator 사용시
+           Iterator it = list.iterator();
            while(it.hasNext()){			// it에 저장된 요소가 있다면 
                Object obj = it.next();		// obj에 it의 요소를 넣음
                System.out.println(obj);	// 들어간 순서대로 출력

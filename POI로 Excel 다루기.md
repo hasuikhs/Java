@@ -6,30 +6,30 @@
 
 - [http://poi.apache.org/download.html](http://poi.apache.org/download.html) 에서 `zip` 파일 선택
 
-  ![image-20200330105529140](POI로 Excel 다루기.assets/image-20200330105529140.png)
+  ![image-20200330105529140](POI로_Excel_다루기.assets/image-20200330105529140.png)
 
 - 다운로드
 
-  ![image-20200330105756384](POI로 Excel 다루기.assets/image-20200330105756384.png)
+  ![image-20200330105756384](POI로_Excel_다루기.assets/image-20200330105756384.png)
 
 - 압축 해제
 
-  ![image-20200330110028055](POI로 Excel 다루기.assets/image-20200330110028055.png)
+  ![image-20200330110028055](POI로_Excel_다루기.assets/image-20200330110028055.png)
 ### 1.2 라이브러리 추가
 
 - Java 프로젝트의 우클릭 **Build Path** 진입
 
-  ![image-20200330112529866](POI로 Excel 다루기.assets/image-20200330112529866.png)
+  ![image-20200330112529866](POI로_Excel_다루기.assets/image-20200330112529866.png)
 
 - 라이브러리 import, **xlsx 파일 또한 읽고 쓴다면 ooxml-lib의 라이브러리 포함**
 
-  ![image-20200330112615423](POI로 Excel 다루기.assets/image-20200330112615423.png)
+  ![image-20200330112615423](POI로_Excel_다루기.assets/image-20200330112615423.png)
 
 - 같은 방식으로 [commons-collections](http://commons.apache.org/proper/commons-collections/download_collections.cgi), [commons-compress](http://commons.apache.org/proper/commons-compress/download_compress.cgi) 추가
 
 ### 1.3 Parsing
 
-![image-20200330125042588](POI로 Excel 다루기.assets/image-20200330125042588.png)
+![image-20200330125042588](POI로_Excel_다루기.assets/image-20200330125042588.png)
 
 - 예제 Excel 파일은 위와 같음
 - Excel 파일은 xlsx로 2007 이후 버전(XSSF)사용하고, 2007 이전 버전(HSSF)은 사용

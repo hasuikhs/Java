@@ -1,6 +1,7 @@
 # JSTL(Jsp Standard Tag Libray)
 
 - JSP 페이지를 작성할 때 유용하게 사용할 수 있는 여러 가지 커스텀 액션과 함수가 포함되어 있는 라이브러리
+- **JSTL을 사용할 때는 JavaScript의 리터럴 문자열을 사용할 수 없음**
 
 ## 1. 선언
 
